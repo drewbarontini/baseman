@@ -2,7 +2,8 @@
 
 This is a base [Middleman](http://middlemanapp.com/) application. This
 sets all of the defaults that I'll generally set when building a new
-application on Middleman.
+application on Middleman. Be sure to read all of the documentation to
+become familiar with Middleman before using this base setup.
 
 ## Running the Application
 
