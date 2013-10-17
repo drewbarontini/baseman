@@ -36,7 +36,8 @@ Or, if you're using Rbenv:
 
 ### To GitHub Pages
 
-Create a new file `Rakefile`, and paste in the following:
+Create a new file `Rakefile` at the root of your project, and paste
+in the following:
 
 ```ruby
 desc "Generate flat files with Middleman"
@@ -72,7 +73,8 @@ You can now deploy by running `rake deploy` from your project's root.
 
 ### To FTP Server Using rsync
 
-Create a new file `Rakefile`, and paste in the following:
+Create a new file `Rakefile` at the root of your project, and paste
+in the following:
 
 ```ruby
 namespace :deploy do
