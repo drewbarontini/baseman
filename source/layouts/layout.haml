@@ -6,9 +6,9 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     %title= current_page.data.title || "The Middleman"
 
-    -#= stylesheet_link_tag 'application'
+    = stylesheet_link_tag 'application'
 
   %body{ class: page_classes }
     = yield
 
-    -#= javascript_include_tag  'application'
+    = javascript_include_tag  'application'
