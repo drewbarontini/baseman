@@ -73,6 +73,8 @@ You can now deploy by running `rake deploy` from your project's root.
 
 ### To FTP Server Using rsync
 
+**Requirement:** You'll need to have SSH access to your server.
+
 Create a new file `Rakefile` at the root of your project, and paste
 in the following:
 
