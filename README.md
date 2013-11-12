@@ -11,6 +11,12 @@ become familiar with Middleman before using this base setup.
 gem install middleman
 ```
 
+Then run:
+
+```shell
+bundle install
+```
+
 ## Running the Application
 
 You run the application by starting the Middleman server:
