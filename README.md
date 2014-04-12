@@ -1,4 +1,4 @@
-# Baseman (v1.0.1)
+# Baseman (v1.0.3)
 
 This is a base [Middleman](http://middlemanapp.com/) application. This
 sets all of the defaults that I'll generally set when building a new
