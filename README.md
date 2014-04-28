@@ -1,11 +1,13 @@
-# Baseman (v1.0.3)
+Baseman (v1.0.3)
+================
 
 This is a base [Middleman](http://middlemanapp.com/) application. This
 sets all of the defaults that I'll generally set when building a new
 application on Middleman. Be sure to read all of the documentation to
 become familiar with Middleman before using this base setup.
 
-## Installing Middleman
+Installing Middleman
+--------------------
 
 ```shell
 gem install middleman
@@ -17,7 +19,8 @@ Then run:
 bundle install
 ```
 
-## Running the Application
+Running the Application
+-----------------------
 
 You run the application by starting the Middleman server:
 
@@ -31,7 +34,8 @@ If you're using Rbenv with binstubs:
 ./bin/middleman s
 ```
 
-## Building the Static Files
+Building the Static Files
+-------------------------
 
 To build the static files:
 
@@ -45,7 +49,8 @@ Or, if you're using Rbenv:
 ./bin/middleman build
 ```
 
-## Deploying
+Deploying
+---------
 
 ### To GitHub Pages
 
@@ -115,7 +120,8 @@ You can now deploy to your staging server by running `rake deploy:staging`
 from your project's root. Use `rake deploy:production` to deploy to your
 production server.
 
-## Credits
+Credits
+-------
 
 Big hat tip to [Arron Mabrey](https://github.com/arronmabrey) for the
 deploy scripts :)
