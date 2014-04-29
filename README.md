@@ -120,6 +120,10 @@ You can now deploy to your staging server by running `rake deploy:staging`
 from your project's root. Use `rake deploy:production` to deploy to your
 production server.
 
+### Middleman Deploy
+
+Another option is the [middleman-deploy](https://github.com/tvaughan/middleman-deploy) extension, which provides more deployment methods for rsync, ftp, sftp or git. Be sure to check it out!
+
 Credits
 -------
 
