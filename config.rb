@@ -1,7 +1,6 @@
 activate :automatic_image_sizes
 activate :directory_indexes
 activate :livereload
-activate :minify_html
 
 # Methods defined in the helpers block are available in templates
 # helpers do

@@ -66,8 +66,6 @@ GEM
       em-websocket (~> 0.5.0)
       middleman-core (~> 3.2)
       rack-livereload (~> 0.3.15)
-    middleman-minify-html (3.1.1)
-      middleman-core (~> 3.0)
     middleman-sprockets (3.3.2)
       middleman-core (>= 3.2)
       sprockets (~> 2.2)
@@ -117,4 +115,3 @@ PLATFORMS
 DEPENDENCIES
   middleman
   middleman-livereload
-  middleman-minify-html
