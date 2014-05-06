@@ -1,5 +1,9 @@
 # Changelog
 
+## Version 1.0.3
+
+- Remove middleman-minify-html
+
 ## Version 1.0.2
 
 - Upgrade Middleman
