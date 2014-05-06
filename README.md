@@ -1,5 +1,5 @@
-Baseman (v1.0.3)
-================
+Baseman
+=======
 
 This is a base [Middleman](http://middlemanapp.com/) application. This
 sets all of the defaults that I'll generally set when building a new
