@@ -6,11 +6,11 @@ sets all of the defaults that I'll generally set when building a new
 application on Middleman. Be sure to read all of the documentation to
 become familiar with Middleman before using this base setup.
 
-Installing Middleman
---------------------
+Setup
+-----
 
 ```shell
-gem install middleman
+gem install bundler
 ```
 
 Then run:
