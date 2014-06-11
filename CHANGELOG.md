@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 1.0.4
+05/06/14
+
+- Upgrade Middleman
+
 ## Version 1.0.3
 05/06/14
 
