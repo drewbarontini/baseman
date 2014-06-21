@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 1.0.5
+06/20/14
+
+- Add meta viewport tag to layout
+
 ## Version 1.0.4
 05/06/14
 
