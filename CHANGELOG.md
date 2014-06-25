@@ -1,32 +1,92 @@
-# Changelog
+Changelog
+=========
 
-## Version 1.0.5
-06/20/14
+1.0.5 - 2014-06-20
+------------------
 
-- Add meta viewport tag to layout
+### Added
 
-## Version 1.0.4
-05/06/14
+- Meta viewport tag to layout
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
+1.0.4 - 2014-05-06
+------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
 
 - Upgrade Middleman
 
-## Version 1.0.3
-05/06/14
+1.0.3 - 2014-05-06
+------------------
 
-- Remove middleman-minify-html
+### Added
 
-## Version 1.0.2
-03/31/14
+- Nothing
+
+### Removed
+
+- middleman-minify-html
+
+### Fixed
+
+- Nothing
+
+1.0.2 - 2014-03-31
+------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
 
 - Upgrade Middleman
 
-## Version 1.0.1
-03/11/14
+1.0.1 - 2014-03-11
+------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
 
 - Upgrade to middleman-livereload 3.3.0
 
-## Version 1.0.0
-01/07/14
+1.0.0 - 2014-01-07
+------------------
+
+### Added
 
 - Initial version applied
 
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
