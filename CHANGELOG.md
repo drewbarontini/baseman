@@ -1,6 +1,24 @@
 Changelog
 =========
 
+1.0.8 - 2014-09-05
+------------------
+
+### Added
+
+- middleman-autoprefixer
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
+Changelog
+=========
+
 1.0.7 - 2014-09-05
 ------------------
 
