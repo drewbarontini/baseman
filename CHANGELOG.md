@@ -1,6 +1,21 @@
 Changelog
 =========
 
+1.0.7 - 2014-09-05
+------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Upgrade Middleman to 3.3.5
+
 1.0.6 - 2014-08-11
 ------------------
 
