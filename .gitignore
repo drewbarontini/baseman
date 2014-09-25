@@ -1,5 +1,6 @@
-/bin
-/.bundle
-/.sass-cache
+build/
+bin/
+.bundle/
+.sass-cache/
 .DS_Store
 .cache

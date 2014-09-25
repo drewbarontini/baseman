@@ -1,6 +1,21 @@
 Changelog
 =========
 
+1.0.9 - 2014-09-25
+-------------------
+
+### Added
+
+- `build/` to the `.gitignore`
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
 1.0.8 - 2014-09-05
 ------------------
 
