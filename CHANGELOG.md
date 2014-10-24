@@ -1,6 +1,21 @@
 Changelog
 =========
 
+1.1.0 - 2014-10-24
+------------------
+
+### Added
+
+- Bower for JavaScript dependency management
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
 1.0.9 - 2014-09-25
 -------------------
 

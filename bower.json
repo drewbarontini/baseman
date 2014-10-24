@@ -1,0 +1,14 @@
+{
+  "name": "Baseman",
+  "version": "1.0.9",
+  "homepage": "https://github.com/drewbarontini/baseman",
+  "description": "A base Middleman application",
+  "authors": [
+    "Drew Barontini"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.1"
+  }
+}
