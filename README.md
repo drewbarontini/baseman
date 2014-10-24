@@ -44,71 +44,19 @@ Deploying
 
 ### To GitHub Pages
 
-Create a new file `Rakefile` at the root of your project, and paste
-in the following:
-
-```ruby
-desc "Generate flat files with Middleman"
-task :generate do
-  puts "## Generating site with Middleman"
-  system "./bin/middleman build --clean"
-  cd "build" do
-    system "git init"
-    system "git remote add origin REPO_URL"
-  end
-end
-
-desc "Push the build to the gh-pages branch on GitHub"
-task :push do
-  puts "## Deploying build to GitHub Pages"
-  cd "build" do
-    system "git add ."
-    system "git add -u"
-    system "git commit -m \"Site updated at #{Time.now.utc}\""
-    system "git push origin master:gh-pages --force"
-  end
-end
-
-desc "Generate flat files and deploy to GitHub Pages"
-task :deploy => [:generate, :push] do
-end
-```
-
-Replace the `REPO_URL` with your repositorie's URL. This assumes that
-you have a `gh-pages` branch that is serving up your site.
-
-You can now deploy by running `rake deploy` from your project's root.
+- Create a new file `Rakefile` at the root of your project, and paste the file from https://github.com/drewbarontini/baseman-deploy/blob/master/github.rake
+- Replace the `REPO_URL` with your repositorie's URL. This assumes that you have a `gh-pages` branch that is serving up your site.
+- You can now deploy by running `rake deploy` from your project's root.
 
 ### To FTP Server Using rsync
 
 **Requirement:** You'll need to have SSH access to your server.
 
-Create a new file `Rakefile` at the root of your project, and paste
-in the following:
+- Create a new file `Rakefile` at the root of your project, and paste the file from https://github.com/drewbarontini/baseman-deploy/blob/master/ftp.rake
+- Replace the `SSH_LOGIN_PATH` with your own.
+- You can now deploy by running `rake deploy` from your project's root.
 
-```ruby
-namespace :deploy do
-  task :generate do
-    puts "## Generating site with Middleman"
-    system "./bin/middleman build --clean"
-  end
-
-  task :production => [:generate] do
-    system "rsync -avz --delete -e ssh ./build/ SSH_LOGIN_PATH"
-  end
-
-  task :staging => [:generate] do
-    system "rsync -avz --delete -e ssh ./build/ SSH_LOGIN_PATH"
-  end
-end
-```
-
-Replace the `SSH_LOGIN_PATH` with your own.
-
-
-You can now deploy to your staging server by running `rake deploy:staging`
-from your project's root. Use `rake deploy:production` to deploy to your
-production server.
+**Note**: There is a [version for staging](https://github.com/drewbarontini/baseman-deploy/blob/master/ftp-staging.rake) as well.
 
 ### Middleman Deploy
 
