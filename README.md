@@ -11,12 +11,14 @@ Setup
 
 ```shell
 gem install bundler
+bundle install
 ```
 
-Then run:
+Next, install Bower for JavaScript dependency management.
 
 ```shell
-bundle install
+npm install -g bower
+bower install
 ```
 
 Running the Application
@@ -28,12 +30,6 @@ You run the application by starting the Middleman server:
 middleman s
 ```
 
-If you're using Rbenv with binstubs:
-
-```shell
-./bin/middleman s
-```
-
 Building the Static Files
 -------------------------
 
@@ -41,12 +37,6 @@ To build the static files:
 
 ```shell
 middleman build
-```
-
-Or, if you're using Rbenv:
-
-```shell
-./bin/middleman build
 ```
 
 Deploying
