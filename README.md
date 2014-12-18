@@ -39,6 +39,11 @@ To build the static files:
 middleman build
 ```
 
+Helpers
+-------
+
+Take a look at [Baseman Helpers](http://github.com/drewbarontini/baseman-helpers/) for some useful Middleman methods that you can include in `config.rb`.
+
 Deploying
 ---------
 
