@@ -1,6 +1,21 @@
 Changelog
 =========
 
+1.1.3 - 2015-01-20
+------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Update jQuery to 2.1.3
+
 1.1.1 - 2014-11-25
 ------------------
 
