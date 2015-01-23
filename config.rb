@@ -1,3 +1,7 @@
+# ====================================
+#   Activate Plugins
+# ====================================
+
 activate :automatic_image_sizes
 activate :directory_indexes
 activate :livereload
@@ -7,12 +11,34 @@ activate :autoprefixer do |config|
   config.cascade = false
 end
 
+# ====================================
+#   Ignore Files & Directories
+# ====================================
+
 ignore 'assets/javascripts/vendor/*'
+
+# ====================================
+#   Global Variables
+# ====================================
 
 set :css_dir, 'assets/stylesheets'
 set :js_dir, 'assets/javascripts'
 set :images_dir, 'assets/images'
 set :fonts_dir, 'assets/fonts'
+
+# ====================================
+#   Helpers
+# ====================================
+
+helpers do
+  # If you need helpers for use in this file, then you
+  # can define them here. Otherwise, they should be defined
+  # in `helpers/custom_helpers.rb`.
+end
+
+# ====================================
+#   Build Configuration
+# ====================================
 
 configure :build do
   activate :minify_css
