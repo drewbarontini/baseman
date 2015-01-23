@@ -42,7 +42,15 @@ middleman build
 Helpers
 -------
 
-Take a look at [Baseman Helpers](http://github.com/drewbarontini/baseman-helpers/) for some useful Middleman methods that you can include in `config.rb`.
+Take a look at [Middleman Library](http://github.com/drewbarontini/middleman-library/) for some useful Middleman methods that you can include in `helpers/custom_helpers.rb`.
+
+If you don't want the helpers in a separate file, you can just add the following block inside of `config.rb` for your helper methods:
+
+```ruby
+helpers do
+  # Put your custom helpers here...
+end
+```
 
 Deploying
 ---------

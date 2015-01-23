@@ -7,13 +7,6 @@ activate :autoprefixer do |config|
   config.cascade = false
 end
 
-# Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
-
 ignore 'assets/javascripts/vendor/*'
 
 set :css_dir, 'assets/stylesheets'
@@ -21,7 +14,6 @@ set :js_dir, 'assets/javascripts'
 set :images_dir, 'assets/images'
 set :fonts_dir, 'assets/fonts'
 
-# Build-specific configuration
 configure :build do
   activate :minify_css
   activate :minify_javascript
