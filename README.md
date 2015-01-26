@@ -21,6 +21,8 @@ npm install -g bower
 bower install
 ```
 
+**Note**: By default, Bower Components install to the default `bower_components` directory at the root. You can change this, if you want, in the `.bowerrc` file, but make sure to update the `.gitignore` with your new directory.
+
 Running the Application
 -----------------------
 
