@@ -12,12 +12,6 @@ activate :autoprefixer do |config|
 end
 
 # ====================================
-#   Ignore Files & Directories
-# ====================================
-
-ignore 'assets/javascripts/vendor/*'
-
-# ====================================
 #   Global Variables
 # ====================================
 
@@ -34,6 +28,15 @@ helpers do
   # If you need helpers for use in this file, then you
   # can define them here. Otherwise, they should be defined
   # in `helpers/custom_helpers.rb`.
+end
+
+# ====================================
+#   After Configuration
+# ====================================
+
+after_configuration do
+  @bower_config = JSON.parse( IO.read( "#{ root }/.bowerrc" ) )
+  sprockets.append_path File.join root.to_s, @bower_config['directory']
 end
 
 # ====================================

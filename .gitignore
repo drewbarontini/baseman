@@ -4,4 +4,4 @@ bin/
 .sass-cache/
 .DS_Store
 .cache
-source/assets/javascripts/vendor
+bower_components

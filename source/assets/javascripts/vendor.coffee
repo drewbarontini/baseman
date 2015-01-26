@@ -5,4 +5,4 @@
 #
 # *************************************
 
-#= require vendor/jquery/dist/jquery
+#= require jquery
