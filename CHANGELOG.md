@@ -1,6 +1,22 @@
 Changelog
 =========
 
+1.2.0 - 2015-01-26
+------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- The `source/assets/javascripts/vendor` directory
+
+### Fixed
+
+- Moved the Bower Components install location to `bower_components`
+- Updated Autoprefixer browser configuration to be `>= IE 10`
+
 1.1.4 - 2015-01-23
 ------------------
 
