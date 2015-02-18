@@ -1,6 +1,21 @@
 Changelog
 =========
 
+1.2.1 - 2015-02-18
+------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- The `page_classes` method on the `body` tag
+
+### Fixed
+
+- Update Haml attribute syntax
+
 1.2.0 - 2015-01-26
 ------------------
 
