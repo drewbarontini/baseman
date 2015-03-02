@@ -14,14 +14,26 @@ gem install bundler
 bundle install
 ```
 
-Next, install Bower for JavaScript dependency management.
+### Bower
+
+Bower is used for JavaScript dependency management.
 
 ```shell
-npm install -g bower
+npm install -g bower # If you don't have it already.
 bower install
 ```
 
 **Note**: By default, Bower Components install to the default `bower_components` directory at the root. You can change this, if you want, in the `.bowerrc` file, but make sure to update the `.gitignore` with your new directory.
+
+### Gulp
+
+Gulp is used for testing of compiled CSS and JavaScript. Also, it's there in case you want to use it for any additional build tasks.
+
+```
+npm install
+```
+
+Install Node/NPM, if you haven't already, otherwise the command will yell at you.
 
 Running the Application
 -----------------------
@@ -30,6 +42,14 @@ You run the application by starting the Middleman server:
 
 ```shell
 middleman s
+```
+
+### Testing CSS & JavaScript
+
+```shell
+gulp # Runs both `gulp test-css` and `gulp test-js`
+gulp test-css # Runs csscss and parker on application.css
+gulp test-js # Runs jshint on application.js
 ```
 
 Building the Static Files
@@ -59,7 +79,7 @@ Deploying
 
 ### To GitHub Pages
 
-- Create a new file `Rakefile` at the root of your project, and paste the file from https://github.com/drewbarontini/baseman-deploy/blob/master/github.rake
+- Create a new file `Rakefile` at the root of your project, and paste the file from [baseman-deploy](https://github.com/drewbarontini/baseman-deploy/blob/master/github.rake).
 - Replace the `REPO_URL` with your repositorie's URL. This assumes that you have a `gh-pages` branch that is serving up your site.
 - You can now deploy by running `rake deploy` from your project's root.
 
@@ -67,7 +87,7 @@ Deploying
 
 **Requirement:** You'll need to have SSH access to your server.
 
-- Create a new file `Rakefile` at the root of your project, and paste the file from https://github.com/drewbarontini/baseman-deploy/blob/master/ftp.rake
+- Create a new file `Rakefile` at the root of your project, and paste the file from [baseman-deploy](https://github.com/drewbarontini/baseman-deploy/blob/master/ftp.rake).
 - Replace the `SSH_LOGIN_PATH` with your own.
 - You can now deploy by running `rake deploy` from your project's root.
 

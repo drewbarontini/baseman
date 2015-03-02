@@ -1,6 +1,21 @@
 Changelog
 =========
 
+1.3.0 - 2015-03-02
+------------------
+
+### Added
+
+- Gulp for testing CSS and JavaScript files
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
 1.2.2 - 2015-03-02
 ------------------
 
