@@ -1,6 +1,22 @@
 Changelog
 =========
 
+1.4.0 - 2015-03-09
+------------------
+
+### Added
+
+- `data/config.yml` for configuration variables
+- `page_title` custom helper for setting the page title
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
 1.3.0 - 2015-03-02
 ------------------
 
