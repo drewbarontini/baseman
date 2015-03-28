@@ -6,8 +6,8 @@
 //
 // Available tasks:
 //   `gulp`
-//   `gulp test-css`
-//   `gulp test-js`
+//   `gulp test:css`
+//   `gulp test:js`
 //
 // *************************************
 
@@ -34,7 +34,7 @@ var plugins = require( 'gulp-load-plugins' )();
 var options = {
 
   default : {
-    tasks : [ 'test-css', 'test-js' ]
+    tasks : [ 'test:css', 'test:js' ]
   },
 
   css : {
@@ -63,7 +63,7 @@ gulp.task( 'default', function() {
 //   Task: Test CSS
 // -------------------------------------
 
-gulp.task( 'test-css', function() {
+gulp.task( 'test:css', function() {
 
   gulp.src( options.css.file )
     .pipe( plugins.plumber() )
@@ -79,7 +79,7 @@ gulp.task( 'test-css', function() {
 //   Task: Test JS
 // -------------------------------------
 
-gulp.task( 'test-js', function() {
+gulp.task( 'test:js', function() {
 
   gulp.src( options.js.file )
     .pipe( plugins.plumber() )

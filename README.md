@@ -48,8 +48,8 @@ middleman s
 
 ```shell
 gulp # Runs both `gulp test-css` and `gulp test-js`
-gulp test-css # Runs csscss and parker on application.css
-gulp test-js # Runs jshint on application.js
+gulp test:css # Runs csscss and parker on application.css
+gulp test:js # Runs jshint on application.js
 ```
 
 Building the Static Files
