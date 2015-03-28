@@ -1,6 +1,22 @@
 Changelog
 =========
 
+1.4.1 - 2015-03-28
+-------------------
+
+### Added
+
+- Cache busting (via query strings) in build
+- HTML minification in build
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
 1.4.0 - 2015-03-09
 ------------------
 
