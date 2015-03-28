@@ -1,6 +1,21 @@
 Changelog
 =========
 
+1.4.2 - 2015-03-28
+------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Update `gulp test-css`, `gulp test-js` task names
+
 1.4.1 - 2015-03-28
 -------------------
 
