@@ -44,6 +44,7 @@ end
 # ====================================
 
 configure :build do
+  activate :cache_buster
   activate :minify_css
   activate :minify_html
   activate :minify_javascript
