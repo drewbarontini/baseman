@@ -1,6 +1,21 @@
 Changelog
 =========
 
+1.5.0 - 2015-06-30
+-------------------
+
+### Added
+
+- Asset hashing in build
+
+### Removed
+
+- Cache busting (via query strings) in build
+
+### Fixed
+
+- Nothing
+
 1.4.3 - 2015-04-01
 ------------------
 
