@@ -1,44 +1,50 @@
-###
-# Page options, layouts, aliases and proxies
-###
-
-# Per-page layout changes:
+# *************************************
 #
-# With no layout
-page '/*.xml', layout: false
-page '/*.json', layout: false
-page '/*.txt', layout: false
+#   Config
+#
+# *************************************
 
-# With alternative layout
-# page "/path/to/file.html", layout: :otherlayout
+# -------------------------------------
+#   Global Variables
+# -------------------------------------
 
-# Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
-# proxy "/this-page-has-no-template.html", "/template-file.html", locals: {
-#  which_fake_page: "Rendering a fake page with a local variable" }
+set :css_dir, 'assets/stylesheets'
+set :js_dir, 'assets/javascripts'
+set :images_dir, 'assets/images'
+set :fonts_dir, 'assets/fonts'
 
-# General configuration
+# -------------------------------------
+#   Helpers
+# -------------------------------------
 
-# Reload the browser automatically whenever files change
-configure :development do
-  activate :livereload
+helpers do
+  # If you need helpers for use in this file, then you
+  # can define them here. Otherwise, they should be defined
+  # in `helpers/custom_helpers.rb`.
 end
 
-###
-# Helpers
-###
+# -------------------------------------
+#   Development Configuration
+# -------------------------------------
 
-# Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+configure :development do
+  activate :livereload
+  activate :automatic_image_sizes
+  activate :directory_indexes
+  activate :autoprefixer do |config|
+    config.browsers = ['last 2 versions', 'Explorer >= 10']
+    config.cascade = false
+  end
+end
 
-# Build-specific configuration
+# -------------------------------------
+#   Build Configuration
+# -------------------------------------
+
 configure :build do
-  # Minify CSS on build
-  # activate :minify_css
-
-  # Minify Javascript on build
-  # activate :minify_javascript
+  activate :asset_hash
+  activate :minify_css
+  activate :minify_html
+  activate :minify_javascript
+  activate :relative_assets
 end
