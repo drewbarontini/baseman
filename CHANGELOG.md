@@ -1,6 +1,21 @@
 Changelog
 =========
 
+2.0.0 - 2016-02-08
+------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Update to Middleman `4.1.1`
+
 1.5.1 - 2015-08-13
 ------------------
 
