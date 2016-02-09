@@ -1,0 +1,13 @@
+{
+  "name": "Baseman",
+  "version": "0.0.0",
+  "author": "Drew Barontini",
+  "devDependencies": {
+    "gulp": "^3.8.7",
+    "gulp-csscss": "^0.1.1",
+    "gulp-jshint": "^1.9.2",
+    "gulp-load-plugins": "^0.8.0",
+    "gulp-parker": "^0.1.1",
+    "gulp-plumber": "^0.6.6"
+  }
+}
