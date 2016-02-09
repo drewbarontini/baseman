@@ -20,10 +20,10 @@ end
 #   After Configuration
 # -------------------------------------
 
-# after_configuration do
-#   @bower_config = JSON.parse( IO.read( "#{ root }/.bowerrc" ) )
-#   sprockets.append_path File.join root.to_s, @bower_config['directory']
-# end
+after_configuration do
+  @bower_config = JSON.parse( IO.read( "#{ root }/.bowerrc" ) )
+  sprockets.append_path File.join root.to_s, @bower_config['directory']
+end
 
 # -------------------------------------
 #   Development Configuration
