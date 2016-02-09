@@ -1,6 +1,6 @@
 {
   "name": "Baseman",
-  "version": "1.2.2",
+  "version": "0.0.0",
   "author": "Drew Barontini",
   "devDependencies": {
     "gulp": "^3.8.7",
