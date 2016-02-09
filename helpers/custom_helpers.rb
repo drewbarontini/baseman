@@ -1,8 +1,11 @@
-# ====================================
+# *************************************
+#
 #   Custom Helpers
-# ====================================
+#
+# *************************************
 
 module CustomHelpers
+
   # Sets the page title
   #
   # == Parameters
@@ -22,4 +25,5 @@ module CustomHelpers
   end
 
   # Put your custom helpers here...
+
 end
