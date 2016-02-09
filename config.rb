@@ -1,44 +1,66 @@
-###
-# Page options, layouts, aliases and proxies
-###
+# -------------------------------------
+#   Layout Changes
+# -------------------------------------
 
-# Per-page layout changes:
-#
-# With no layout
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
-# With alternative layout
-# page "/path/to/file.html", layout: :otherlayout
+# -------------------------------------
+#   Development Configuration
+# -------------------------------------
 
-# Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
-# proxy "/this-page-has-no-template.html", "/template-file.html", locals: {
-#  which_fake_page: "Rendering a fake page with a local variable" }
-
-# General configuration
-
-# Reload the browser automatically whenever files change
 configure :development do
+
+  activate :automatic_image_sizes
+  activate :directory_indexes
   activate :livereload
+
+  activate :autoprefixer do |config|
+    config.browsers = ['last 2 versions', 'Explorer >= 10']
+    config.cascade = false
+  end
+
 end
 
-###
-# Helpers
-###
+# -------------------------------------
+#   Global Variables
+# -------------------------------------
 
-# Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
+set :css_dir, 'assets/stylesheets'
+set :js_dir, 'assets/javascripts'
+set :images_dir, 'assets/images'
+set :fonts_dir, 'assets/fonts'
+
+# -------------------------------------
+#   Helpers
+# -------------------------------------
+
+helpers do
+  # If you need helpers for use in this file, then you
+  # can define them here. Otherwise, they should be defined
+  # in `helpers/custom_helpers.rb`.
+end
+
+# -------------------------------------
+#   After Configuration
+# -------------------------------------
+
+# after_configuration do
+#   @bower_config = JSON.parse( IO.read( "#{ root }/.bowerrc" ) )
+#   sprockets.append_path File.join root.to_s, @bower_config['directory']
 # end
 
-# Build-specific configuration
-configure :build do
-  # Minify CSS on build
-  # activate :minify_css
+# -------------------------------------
+#   Build Configuration
+# -------------------------------------
 
-  # Minify Javascript on build
-  # activate :minify_javascript
+configure :build do
+
+  activate :asset_hash
+  activate :minify_css
+  activate :minify_html
+  activate :minify_javascript
+  activate :relative_assets
+
 end
